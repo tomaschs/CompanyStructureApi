@@ -2,6 +2,7 @@ using CompanyStructureApi.Data;
 using CompanyStructureApi.Services;
 using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
+using Scalar.AspNetCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -31,11 +32,15 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
 	app.UseSwagger();
 	app.UseSwaggerUI();
+
+	app.MapScalarApiReference(options =>
+	{
+		options.WithOpenApiRoutePattern("/swagger/{documentName}/swagger.json");
+	});
 }
 
 app.UseHttpsRedirection();
