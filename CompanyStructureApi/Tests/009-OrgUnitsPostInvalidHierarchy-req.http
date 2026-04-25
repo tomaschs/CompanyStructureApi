@@ -1,0 +1,10 @@
+POST https://localhost:7050/api/OrgUnits
+Content-Type: application/json
+
+{
+  "name":"Invalid Department Under Company",
+  "code":"TP_INVALID_HIER_001",
+  "type":3,
+  "parentId":1,
+  "managerId":3
+}

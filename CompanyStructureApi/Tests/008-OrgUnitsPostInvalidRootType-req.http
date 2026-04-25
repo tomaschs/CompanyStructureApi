@@ -1,0 +1,10 @@
+POST https://localhost:7050/api/OrgUnits
+Content-Type: application/json
+
+{
+  "name":"Invalid Root Division",
+  "code":"TP_INVALID_ROOT_001",
+  "type":1,
+  "parentId":null,
+  "managerId":2
+}

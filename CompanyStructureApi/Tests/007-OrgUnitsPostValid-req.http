@@ -1,0 +1,10 @@
+POST https://localhost:7050/api/OrgUnits
+Content-Type: application/json
+
+{
+  "name":"TeaPie Division",
+  "code":"TP_DIV_001",
+  "type":1,
+  "parentId":1,
+  "managerId":2
+}
