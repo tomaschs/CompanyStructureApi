@@ -1,0 +1,10 @@
+PUT https://localhost:7050/api/Employees/{{DeleteEmployeeId}}
+Content-Type: application/json
+
+{
+  "title":"Ing.",
+  "firstName":"Tea_UPDATED",
+  "lastName":"Pie",
+  "phone":"0900000000",
+  "email":"posttest@company.com"
+}

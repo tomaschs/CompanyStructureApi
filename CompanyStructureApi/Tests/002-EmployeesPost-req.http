@@ -1,0 +1,10 @@
+POST https://localhost:7050/api/Employees
+Content-Type: application/json
+
+{
+  "title":"Ing.",
+  "firstName":"Tea",
+  "lastName":"Pie",
+  "phone":"0900000000",
+  "email":"posttest@company.com"
+}
